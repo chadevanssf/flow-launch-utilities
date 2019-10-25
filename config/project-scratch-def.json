@@ -1,0 +1,18 @@
+{
+  "orgName": "Flow Launch Utilities",
+  "edition": "Developer",
+  "features": [
+    "Communities"
+  ],
+  "settings": {
+    "experienceBundleSettings": {
+      "enableExperienceBundleMetadata": true
+    },
+    "communitiesSettings": {
+      "enableNetworksEnabled": true
+    },
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    }
+  }
+}

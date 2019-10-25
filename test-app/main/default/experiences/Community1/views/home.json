@@ -1,0 +1,61 @@
+{
+  "appPageId" : "e7431224-f2d4-4b0a-af99-321d7153a0d3",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "0fef85e4-7b53-4403-b116-a9acd84aed4b",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "acceptedUrlParams" : "userkey",
+        "flowName" : "Test_Flow_with_URL_Parameters",
+        "includeCurrentUrl" : "true",
+        "title" : "Flow"
+      },
+      "componentName" : "c:flowWithUrlParams",
+      "id" : "9a9236f9-710a-423c-b025-fd50269d7b8c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "111ffca8-1f8d-423e-9765-527159d18b49",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div>     <p><span style='font-size: 48px;'>Let's get started!</span></p>     <ol>         <li><span style='font-size: 18px;'>Unfamiliar with Build Your Own? Click Take a Tour in the Help menu.</span></li>         <li><span style='font-size: 18px;'>Want to add more pages? Take a look at the Pages menu.</span></li>         <li><span style='font-size: 18px;'>Want more components on your page? Drag and drop components from the Components panel.</span></li>         <li><span style='font-size: 18px;'>Want your users to see your company logo? Head on over to the Branding panel.</span></li>         <li><span style='font-size: 18px;'>Refine the look of your community with a custom theme layout. See the Lightning Communities Developer Guide.</span></li>     </ol> </div>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "61e4b2b3-7786-42e0-8ee7-518c9d76c99b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "16d6eac2-7df6-4299-8a9d-2f1e53231884",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "307cd268-595d-4a8f-ace2-d4dbf2fa88a1",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "description" : "",
+        "metaTags" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "0bbc6de9-c42f-4de7-8d54-fa216da40300",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "40ae2358-3340-4e42-b654-02fc880c3c33",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}
