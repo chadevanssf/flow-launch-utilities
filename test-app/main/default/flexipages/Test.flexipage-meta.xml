@@ -5,6 +5,45 @@
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>buttonLabel</name>
+                <value>Hello</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>buttonVariant</name>
+                <value>base</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>flowName</name>
+                <value>Test_Flow_in_Modal</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>modalSize</name>
+                <value>large</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>modalTitle</name>
+                <value>Hello World</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>refreshRecord</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>refreshRecordDelay</name>
+                <value>1000</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showFooter</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showHeader</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentName>flowModalFromButton</componentName>
+        </componentInstances>
         <name>region2</name>
         <type>Region</type>
     </flexiPageRegions>

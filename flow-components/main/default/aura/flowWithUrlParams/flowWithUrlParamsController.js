@@ -7,13 +7,19 @@
 ({
 	doInit : function(component, event, helper) {
         // Take all the parameters and pass them into the Flow, assumes all are strings
+        var flowName = component.get("v.flowName");
+        var flow;
+        var flowParams = [];
         var acceptedParamsComma = component.get("v.acceptedUrlParams");
-        var urlParams = [];
+        var acptParams;
+        var includeCurrUrl = component.get("v.includeCurrentUrl");
+        var currenturl = location.href.replace(location.search, "");
+        var currUrlParam;
 		var query = location.search.substr(1);
                 
         //console.log("Looking for a key to add:");
         //console.log(acceptedParamsComma);
-        var acptParams = acceptedParamsComma.split(",");
+        acptParams = acceptedParamsComma.split(",");
         
         query.split("&").forEach(function(part) {
             var item = part.split("=");
@@ -24,29 +30,26 @@
             };
             if (i.name !== "" && acptParams.includes(i.name)) {
                 //console.log("Found a key to add");
-				urlParams.push(i);
+				flowParams.push(i);
             }
         });
         
-        var includeCurrUrl = component.get("v.includeCurrentUrl");
         if (includeCurrUrl) {
-            var currenturl = location.href.replace(location.search, "");
-            var i = {
+            currUrlParam = {
                 "name": "currenturl",
                 "type": "String",
                 "value": currenturl
             };
-            urlParams.push(i);
+            flowParams.push(i);
         }
         
-        component.set("v.urlParams", urlParams);
+        component.set("v.urlParams", flowParams);
         
-        // In that component, start your flow. Reference the flow's Unique Name from config.
-        var flowName = component.get("v.flowName");
         component.set("v.loading", false);
         if (flowName !== "") {
-            var flow = component.find("flowId");
-            flow.startFlow(flowName, urlParams);
+            component.set("v.missingFlow", false);
+            flow = component.find("flowId");
+            flow.startFlow(flowName, flowParams);
         } else {
             component.set("v.missingFlow", true);
         }
