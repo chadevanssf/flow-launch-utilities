@@ -6,13 +6,55 @@
   "regions" : [ {
     "components" : [ {
       "componentAttributes" : {
-        "acceptedUrlParams" : "userkey",
-        "flowName" : "Test_Flow_with_URL_Parameters",
-        "includeCurrentUrl" : "true",
-        "title" : "Flow"
+        "buttonLabel" : "Hello World large",
+        "buttonVariant" : "brand",
+        "flowName" : "Test_Flow_in_Modal",
+        "modalSize" : "large",
+        "modalTitle" : "Hello World - Large",
+        "recordId" : "",
+        "refreshRecord" : "false",
+        "refreshRecordDelay" : "1000",
+        "showFooter" : "false",
+        "showHeader" : "true"
       },
-      "componentName" : "c:flowWithUrlParams",
-      "id" : "9a9236f9-710a-423c-b025-fd50269d7b8c",
+      "componentName" : "c:flowModalFromButton",
+      "id" : "7bca72d3-16cc-40b8-9b78-267d2b8a0985",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "buttonLabel" : "Hello World medium",
+        "buttonVariant" : "brand",
+        "flowName" : "Test_Flow_in_Modal",
+        "modalSize" : "medium",
+        "modalTitle" : "Hello World - Medium",
+        "recordId" : "",
+        "refreshRecord" : "false",
+        "refreshRecordDelay" : "1000",
+        "showFooter" : "false",
+        "showHeader" : "false"
+      },
+      "componentName" : "c:flowModalFromButton",
+      "id" : "85d1ad3b-2e44-4c76-90c3-64f89eacf75f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "buttonLabel" : "Hello World small",
+        "buttonVariant" : "brand",
+        "flowName" : "Test_Flow_in_Modal",
+        "modalSize" : "small",
+        "modalTitle" : "Hello World - Small",
+        "recordId" : "",
+        "refreshRecord" : "false",
+        "refreshRecordDelay" : "1000",
+        "showFooter" : "false",
+        "showHeader" : "true"
+      },
+      "componentName" : "c:flowModalFromButton",
+      "id" : "5488ac31-b1a1-44c7-9c47-30a043e5c6c6",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
@@ -27,6 +69,18 @@
       },
       "componentName" : "forceCommunity:richTextInline",
       "id" : "61e4b2b3-7786-42e0-8ee7-518c9d76c99b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "acceptedUrlParams" : "userkey",
+        "flowName" : "Test_Flow_with_URL_Parameters",
+        "includeCurrentUrl" : "true",
+        "title" : "Flow"
+      },
+      "componentName" : "c:flowWithUrlParams",
+      "id" : "9a9236f9-710a-423c-b025-fd50269d7b8c",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"

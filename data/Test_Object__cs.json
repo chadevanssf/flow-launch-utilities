@@ -1,0 +1,11 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Test_Object__c",
+                "referenceId": "Test_Object__cRef1"
+            },
+            "Name": "TO-0000"
+        }
+    ]
+}

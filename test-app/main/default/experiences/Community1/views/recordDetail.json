@@ -4,6 +4,61 @@
   "id" : "dafbe11d-3060-4670-8882-e532bcc72a65",
   "label" : "Record Detail",
   "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "buttonLabel" : "Hello World large",
+        "buttonVariant" : "brand",
+        "flowName" : "Test_Flow_in_Modal",
+        "modalSize" : "large",
+        "modalTitle" : "Hello World - Large",
+        "recordId" : "{!recordId}",
+        "refreshRecord" : "true",
+        "refreshRecordDelay" : "1000",
+        "showFooter" : "false",
+        "showHeader" : "true"
+      },
+      "componentName" : "c:flowModalFromButton",
+      "id" : "0e7f29d0-d121-4bb5-a47c-08b9f473c2c8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "buttonLabel" : "Hello World medium",
+        "buttonVariant" : "brand",
+        "flowName" : "Test_Flow_in_Modal",
+        "modalSize" : "medium",
+        "modalTitle" : "Hello World - Medium",
+        "recordId" : "{!recordId}",
+        "refreshRecord" : "true",
+        "refreshRecordDelay" : "1000",
+        "showFooter" : "false",
+        "showHeader" : "true"
+      },
+      "componentName" : "c:flowModalFromButton",
+      "id" : "6d87e714-d30c-4668-bf4e-0ade2e5ef073",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "buttonLabel" : "Hello World small",
+        "buttonVariant" : "brand",
+        "flowName" : "Test_Flow_in_Modal",
+        "modalSize" : "small",
+        "modalTitle" : "Hello World - Small",
+        "recordId" : "{!recordId}",
+        "refreshRecord" : "true",
+        "refreshRecordDelay" : "1000",
+        "showFooter" : "false",
+        "showHeader" : "false"
+      },
+      "componentName" : "c:flowModalFromButton",
+      "id" : "bc328858-3ccf-43d6-ae0c-e78c5e29ddcf",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
     "id" : "aacd8a67-7cfc-4530-9363-c286c032b768",
     "regionName" : "header",
     "type" : "region"

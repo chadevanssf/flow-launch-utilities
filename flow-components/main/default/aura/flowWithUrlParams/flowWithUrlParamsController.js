@@ -40,7 +40,7 @@
                 "type": "String",
                 "value": currenturl
             };
-            flowParams.push(i);
+            flowParams.push(currUrlParam);
         }
         
         component.set("v.urlParams", flowParams);

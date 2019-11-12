@@ -19,9 +19,10 @@ A collection of useful abilties when luanching flows.
     ```sh
     sfdx force:user:permset:assign -n Test_Config -u flowlaunchutilities
     ```
+1. Update Community to Active, and Publish from Community Builder
 1. Set Default Data
     ```sh
-    sfdx force:data:tree:import -p ./data/Data-plan.json -u flowlaunchutilities
+    sfdx force:data:tree:import -p ./data/Test_Object__c-plan.json -u flowlaunchutilities
     ```
 1. Open the Scratch Org
     ```sh
@@ -43,3 +44,11 @@ Need to launch a flow inside of a modal dialog box? Puts your flow into a dialog
 ### flowModalFromButtonGroup
 
 Want the same functionality as flowButtonIntoModal, but for a button group? Puts your flows into a dialog box that is launched from one of a number of buttons.
+
+## Deverloper Information
+
+### Refresh Data
+
+```sh
+sfdx force:data:tree:export -q ./data/test_object.soql -d ./data/ -p -u flowlaunchutilities
+```
