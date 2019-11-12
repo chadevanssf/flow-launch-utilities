@@ -10,6 +10,7 @@
     <label>Test App</label>
     <navType>Standard</navType>
     <tabs>Test</tabs>
+    <tabs>Test_Object__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Test_App_UtilityBar</utilityBar>
 </CustomApplication>
