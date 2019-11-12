@@ -12,7 +12,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>buttonVariant</name>
-                <value>base</value>
+                <value>brand</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>flowName</name>

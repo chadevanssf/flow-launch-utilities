@@ -10,7 +10,7 @@
         component.set("v.isOpen", true);
         component.set("v.loading", true);
         
-        if (recordId !== "") {
+        if (recordId && recordId !== "") {
             recIdParam = {
                 "name": "recordId",
                 "type": "String",

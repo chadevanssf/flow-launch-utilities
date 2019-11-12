@@ -2,14 +2,7 @@
     "compilerOptions": {
         "experimentalDecorators": true,
         "baseUrl": ".",
-        "paths": {
-            "c/FlowWithUrlParams": [
-                "FlowWithUrlParams/FlowWithUrlParams.js"
-            ],
-            "c/flowWithUrlParams": [
-                "flowWithUrlParams/flowWithUrlParams.js"
-            ]
-        }
+        "paths": {}
     },
     "include": [
         "**/*",

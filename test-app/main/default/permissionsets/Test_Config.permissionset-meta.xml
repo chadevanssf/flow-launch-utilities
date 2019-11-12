@@ -6,4 +6,8 @@
     </applicationVisibilities>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Test Config</label>
+    <tabSettings>
+        <tab>Test</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
 </PermissionSet>

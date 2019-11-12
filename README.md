@@ -7,26 +7,25 @@ A collection of useful abilties when luanching flows.
 1. Log into DevHub, if not already logged in
 1. Create a scratch org
     ```sh
-    sfdx force:org:create -f config/project-scratch-def.json -a flowutil -s
+    sfdx force:org:create -f config/project-scratch-def.json -a flowlaunchutilities -s
     ```
 1. Ensure Communities is enabled, and Enable ExperienceBundle Metadata API is True
     * Setup > Feature Settings > Communities > Communities Settings
 1. Deploy Source
     ```sh
-    sfdx force:source:push -u flowutil
+    sfdx force:source:push -u flowlaunchutilities
     ```
 1. Assign permission set
     ```sh
-    sfdx force:user:permset:assign -u flowutil -n Test_Config
+    sfdx force:user:permset:assign -n Test_Config -u flowlaunchutilities
     ```
-1. Update Community Guest Profile to have read access to Newsletter__c, and read/update to Signup__c, Newsletter_Subscription__c, and Apex Class "GuidUtil"
 1. Set Default Data
     ```sh
-    sfdx force:data:tree:import -u flowutil -p ./data/Data-plan.json
+    sfdx force:data:tree:import -p ./data/Data-plan.json -u flowlaunchutilities
     ```
 1. Open the Scratch Org
     ```sh
-    sfdx force:org:open -u flowutil
+    sfdx force:org:open -u flowlaunchutilities
     ```
 
 ## Component Inventory

@@ -33,10 +33,10 @@
     
     <aura:if isTrue="{!v.isOpen}">
         <!--###### MODAL BOX Start######--> 
-        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="{!'slds-modal slds-fade-in-open' + v.modalSize }">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="{!'slds-modal slds-fade-in-open slds-modal_' + v.modalSize }">
             <div class="slds-modal__container">
                 <!-- ###### MODAL BOX HEADER Start ######-->
-                <header class="{!'slds-modal__header' + v.showHeader ? 'slds-modal__header_empty' : ''}">
+                <header class="{!not(v.showHeader) ? 'slds-modal__header slds-modal__header_empty' : 'slds-modal__header'}">
                     <lightning:buttonIcon iconName="utility:close"
                                           onclick="{! c.closeModel }"
                                           alternativeText="close"
@@ -50,10 +50,6 @@
                 </header>
                 <!--###### MODAL BOX BODY Part Start######-->
                 <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
-                    <lightning:flow aura:id="flowId"
-                                    onstatuschange="{!c.statusChange}" />
-                    
-                    
                     <aura:if isTrue="{!v.loading}">
                         <lightning:spinner alternativeText="Loading Flow" size="large" />
                         <aura:set attribute="else">
