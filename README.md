@@ -22,7 +22,7 @@ A collection of useful abilties when luanching flows.
 1. Update Community to Active, and Publish from Community Builder
 1. Set Default Data
     ```sh
-    sfdx force:data:tree:import -p ./data/Test_Object__c-plan.json -u flowlaunchutilities
+    sfdx force:data:tree:import -p ./data/Test_Object__c-Test_Object_Child__c-plan.json -u flowlaunchutilities
     ```
 1. Open the Scratch Org
     ```sh

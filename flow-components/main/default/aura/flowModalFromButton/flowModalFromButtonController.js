@@ -20,7 +20,7 @@
         }
         
         component.set("v.loading", false);
-        if (flowName !== "") {
+        if (flowName && flowName !== "") {
             component.set("v.missingFlow", false);
             flow = component.find("flowId");
             flow.startFlow(flowName, flowParams);

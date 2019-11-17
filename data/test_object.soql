@@ -1,3 +1,7 @@
-SELECT Id, Name
+SELECT Id, Name,
+(
+    SELECT Id, Name
+    FROM Test_Object_Children__r
+)
 FROM Test_Object__c
 ORDER BY Name
