@@ -1,0 +1,9 @@
+scratch-org-def: config/project-scratch-def.json
+assign-permset: true
+permset-name: Test_Config
+run-apex-tests: true
+delete-scratch-org: false
+show-scratch-org-url: true
+open-path: c/Test_App.app
+data-plans:
+  - ./data/Test_Object__c-Test_Object_Child__c-plan.json

@@ -1,5 +1,13 @@
+<!--
+/*
+* Copyright (c) 2020, salesforce.com, inc.
+* All rights reserved.
+* SPDX-License-Identifier: BSD-3-Clause
+* For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+*/
+-->
 <aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global">
-    <!-- ### Public/Global Attributes ### -->
+    <!--### Public/Global Attributes ###-->
     <aura:attribute name="recordId" type="String" access="global" />
     <aura:attribute name="buttonLabel" type="String" access="global" />
     <aura:attribute name="buttonVariant" type="String" access="global" />
@@ -13,7 +21,7 @@
     <aura:attribute name="refreshRecord" type="Boolean" default="false" access="global" />
     <aura:attribute name="refreshRecordDelay" type="Integer" default="1000" access="global" />
     
-    <!-- ### Private Attributes ### -->
+    <!--### Private Attributes ###-->
     <aura:attribute name="isOpen" type="boolean" default="false" access="private" />
     <aura:attribute name="loading" type="Boolean" default="true" access="private" />
     <aura:attribute name="missingFlow" type="Boolean" default="false" access="private" />
@@ -32,10 +40,10 @@
                       onclick="{! c.openModel }" />
     
     <aura:if isTrue="{!v.isOpen}">
-        <!--###### MODAL BOX Start######--> 
+        <!--### MODAL BOX Start ###--> 
         <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="{!'slds-modal slds-fade-in-open slds-modal_' + v.modalSize }">
             <div class="slds-modal__container">
-                <!-- ###### MODAL BOX HEADER Start ######-->
+                <!--### MODAL BOX HEADER Start ###-->
                 <header class="{!not(v.showHeader) ? 'slds-modal__header slds-modal__header_empty' : 'slds-modal__header'}">
                     <lightning:buttonIcon iconName="utility:close"
                                           onclick="{! c.closeModel }"
@@ -48,7 +56,7 @@
                         </h2>
                     </aura:if>
                 </header>
-                <!--###### MODAL BOX BODY Part Start######-->
+                <!--### MODAL BOX BODY Part Start ###-->
                 <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
                     <aura:if isTrue="{!v.loading}">
                         <lightning:spinner alternativeText="Loading Flow" size="large" />
@@ -67,7 +75,7 @@
                     
                     
                 </div>
-                <!--###### MODAL BOX FOOTER Part Start ######-->
+                <!--### MODAL BOX FOOTER Part Start ###-->
                 <aura:if isTrue="{!v.showFooter}">
                     <footer class="slds-modal__footer">
                         <lightning:button variant="{!v.closeButtonVariant}" 
@@ -79,6 +87,6 @@
             </div>
         </section>
         <div class="slds-backdrop slds-backdrop_open"></div>
-        <!--###### MODAL BOX Part END Here ######-->
+        <!--### MODAL BOX Part END Here ###-->
     </aura:if>
 </aura:component>

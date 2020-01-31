@@ -1,5 +1,13 @@
+<!--
+/*
+* Copyright (c) 2020, salesforce.com, inc.
+* All rights reserved.
+* SPDX-License-Identifier: BSD-3-Clause
+* For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+*/
+-->
 <aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global">
-    <!-- ### Public/Global Attributes ### -->
+    <!--### Public/Global Attributes ###-->
     <!-- common -->
     <aura:attribute name="recordId" type="String" />
     <aura:attribute name="refreshRecord" type="Boolean" default="false" access="global" />

@@ -2,6 +2,10 @@
 
 A collection of useful abilties when luanching flows.
 
+## One Click Deploy
+
+[![Deploy](https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg)](https://deploy-to-sfdx.com)
+
 ## Setup using SFDX CLI
 
 1. Log into DevHub, if not already logged in
