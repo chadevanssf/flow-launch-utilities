@@ -4,6 +4,6 @@ permset-name: Test_Config
 run-apex-tests: true
 delete-scratch-org: false
 show-scratch-org-url: true
-open-path: c/Test_App.app
+open-path: lightning/n/Test
 data-plans:
   - ./data/Test_Object__c-Test_Object_Child__c-plan.json
