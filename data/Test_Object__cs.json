@@ -5,7 +5,21 @@
                 "type": "Test_Object__c",
                 "referenceId": "Test_Object__cRef1"
             },
-            "Name": "TO-0000"
+            "Status__c": "New"
+        },
+        {
+            "attributes": {
+                "type": "Test_Object__c",
+                "referenceId": "Test_Object__cRef2"
+            },
+            "Status__c": "Active"
+        },
+        {
+            "attributes": {
+                "type": "Test_Object__c",
+                "referenceId": "Test_Object__cRef3"
+            },
+            "Status__c": "Inactive"
         }
     ]
 }

@@ -1,12 +1,32 @@
 # flow-launch-utilities
 
-A collection of useful abilties when luanching flows.
+A collection of useful capabilities when luanching flows from Lighting Experience and Lightning Communities.
 
 ## One Click Deploy
 
 [![Deploy](https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg)](https://deploy-to-sfdx.com)
 
-## Setup using SFDX CLI
+See [Developer Information](#developer-information) for more deployment options, like for SFDX CLI.
+
+## Component Inventory
+
+### flowWithUrlParams
+
+Ever wanted to pass in variable from a community url into your flow as parameters? Grabs the defined list of url parameters and provides them to your flow, mapped to your input variables.
+
+*Community Only*
+
+### flowModalFromButton
+
+Need to launch a flow inside of a modal dialog box? Puts your flow into a dialog box that is lanched from button.
+
+### flowModalFromButtonGroup
+
+Want the same functionality as flowButtonIntoModal, but for a button group? Puts your flows into a dialog box that is launched from one of a number of buttons.
+
+## Developer Information
+
+### Setup using SFDX CLI
 
 1. Log into DevHub, if not already logged in
 1. Create a scratch org
@@ -32,24 +52,6 @@ A collection of useful abilties when luanching flows.
     ```sh
     sfdx force:org:open -u flowlaunchutilities
     ```
-
-## Component Inventory
-
-### flowWithUrlParams
-
-Ever wanted to pass in variable from a community url into your flow as parameters? Grabs the defined list of url parameters and provides them to your flow, mapped to your input variables.
-
-*Community Only*
-
-### flowModalFromButton
-
-Need to launch a flow inside of a modal dialog box? Puts your flow into a dialog box that is lanched from button.
-
-### flowModalFromButtonGroup
-
-Want the same functionality as flowButtonIntoModal, but for a button group? Puts your flows into a dialog box that is launched from one of a number of buttons.
-
-## Deverloper Information
 
 ### Refresh Data
 

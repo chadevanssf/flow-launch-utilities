@@ -5,8 +5,24 @@
                 "type": "Test_Object_Child__c",
                 "referenceId": "Test_Object_Child__cRef1"
             },
-            "Name": "TOC-0000",
+            "Active__c": true,
             "Test_Object__c": "@Test_Object__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Test_Object_Child__c",
+                "referenceId": "Test_Object_Child__cRef2"
+            },
+            "Active__c": false,
+            "Test_Object__c": "@Test_Object__cRef2"
+        },
+        {
+            "attributes": {
+                "type": "Test_Object_Child__c",
+                "referenceId": "Test_Object_Child__cRef3"
+            },
+            "Active__c": true,
+            "Test_Object__c": "@Test_Object__cRef3"
         }
     ]
 }

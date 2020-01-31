@@ -1,6 +1,6 @@
-SELECT Id, Name,
+SELECT Id, Status__c,
 (
-    SELECT Id, Name
+    SELECT Id, Active__c
     FROM Test_Object_Children__r
 )
 FROM Test_Object__c
