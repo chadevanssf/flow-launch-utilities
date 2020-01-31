@@ -1,0 +1,9 @@
+{
+  "appPageId" : "e7431224-f2d4-4b0a-af99-321d7153a0d3",
+  "id" : "c947469e-8015-46fc-98a3-a0f0c9a3de6b",
+  "label" : "Test",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-test",
+  "type" : "route",
+  "urlPrefix" : "test"
+}

@@ -1,0 +1,158 @@
+{
+  "appPageId" : "e7431224-f2d4-4b0a-af99-321d7153a0d3",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "764c822f-041a-41a7-b5f0-b42fb7aa82e9",
+  "label" : "Test",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgb(255,255,255)",
+        "backgroundOverlay" : "rgba(255,255,255,0.7)",
+        "contentAreaWidth" : "100",
+        "sectionConfig" : "{\"UUID\":\"8a0d19a6-2727-4d84-ab75-5a70b75ebb9b\",\"columns\":[{\"UUID\":\"a2f7641d-57c1-4a86-a88a-07703eca60c6\",\"columnName\":\"Column 1\",\"columnKey\":\"1\",\"columnWidth\":\"6\",\"seedComponents\":[]},{\"UUID\":\"c4c84c47-0c18-4615-8006-752a7c9feab4\",\"columnName\":\"Column 2\",\"columnKey\":\"db586\",\"columnWidth\":\"6\",\"seedComponents\":[]}]}",
+        "sectionHeight" : "300"
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "8a0d19a6-2727-4d84-ab75-5a70b75ebb9b",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "buttonLabel" : "Hello World Large",
+            "buttonVariant" : "brand",
+            "flowName" : "Test_Flow_in_Modal",
+            "modalSize" : "large",
+            "modalTitle" : "Hello World, Large",
+            "recordId" : "",
+            "refreshRecord" : "false",
+            "refreshRecordDelay" : "1000",
+            "showFooter" : "false",
+            "showHeader" : "true"
+          },
+          "componentName" : "c:flowModalFromButton",
+          "id" : "8a352ab2-7da0-49d4-89f9-cba82654cc09",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "buttonLabel" : "Hello World Medium",
+            "buttonVariant" : "destructive",
+            "flowName" : "Test_Flow_in_Modal",
+            "modalSize" : "medium",
+            "modalTitle" : "Hello World, Medium",
+            "recordId" : "",
+            "refreshRecord" : "false",
+            "refreshRecordDelay" : "1000",
+            "showFooter" : "false",
+            "showHeader" : "true"
+          },
+          "componentName" : "c:flowModalFromButton",
+          "id" : "99e30d35-f07e-4aed-bd5c-013b0d02f035",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "buttonLabel" : "Hello World Small",
+            "buttonVariant" : "success",
+            "flowName" : "Test_Flow_in_Modal",
+            "modalSize" : "small",
+            "modalTitle" : "Hello World, Small",
+            "recordId" : "",
+            "refreshRecord" : "false",
+            "refreshRecordDelay" : "1000",
+            "showFooter" : "false",
+            "showHeader" : "true"
+          },
+          "componentName" : "c:flowModalFromButton",
+          "id" : "8fe1ee15-bac3-4e80-bd27-19125ccf91ec",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "buttonLabel_1" : "Hello World Large",
+            "buttonLabel_2" : "Hello World Medium",
+            "buttonLabel_3" : "Hello World Small",
+            "buttonVariant_1" : "brand",
+            "buttonVariant_2" : "destructive",
+            "buttonVariant_3" : "success",
+            "flowName_1" : "Test_Flow_in_Modal",
+            "flowName_2" : "Test_Flow_in_Modal",
+            "flowName_3" : "Test_Flow_in_Modal",
+            "modalSize_1" : "large",
+            "modalSize_2" : "medium",
+            "modalSize_3" : "small",
+            "modalTitle_1" : "Hello World, Large",
+            "modalTitle_2" : "Hello World, Medium",
+            "modalTitle_3" : "Hello World, Small",
+            "recordId" : "",
+            "refreshRecord" : "false",
+            "refreshRecordDelay" : "1000",
+            "showFooter_1" : "false",
+            "showFooter_2" : "false",
+            "showFooter_3" : "false",
+            "showHeader_1" : "true",
+            "showHeader_2" : "true",
+            "showHeader_3" : "true"
+          },
+          "componentName" : "c:flowModalFromButtonGroup",
+          "id" : "9eed6520-2c99-48c6-b27d-168177691ee0",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "a2f7641d-57c1-4a86-a88a-07703eca60c6",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "acceptedUrlParams" : "userkey",
+            "flowName" : "Test_Flow_with_URL_Parameters",
+            "iconName" : "standard:link",
+            "includeCurrentUrl" : "true",
+            "title" : "Flow"
+          },
+          "componentName" : "c:flowWithUrlParams",
+          "id" : "6caf0d7a-de74-401e-aae5-bed971d21493",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "c4c84c47-0c18-4615-8006-752a7c9feab4",
+        "regionLabel" : "Column 2",
+        "regionName" : "db586",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3c3cc97f-f8cf-40dc-a4ba-a2e2f9989de5",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "description" : "",
+        "metaTags" : "",
+        "title" : "Test"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "13b6b0ad-5346-415b-90f6-fef4ac4f6d01",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c2cd3caa-441f-4bdc-870b-aa1939978e62",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-test"
+}
